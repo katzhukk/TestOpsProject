@@ -2,6 +2,7 @@ import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.Owner;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
@@ -12,8 +13,9 @@ import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
 @DisplayName("Проверка главной страницы Газпромбанка")
-public class SimpleGazpromBankTests {
+public class SimpleGazpromBankTests extends TestBase {
 
+    @Tag("simple")
     @Owner("Ekaterina Zhukova")
     @DisplayName("Тест на выбора города на главной странице Газпромбанка")
     @Test
@@ -42,7 +44,7 @@ public class SimpleGazpromBankTests {
         });
     }
 
-
+    @Tag("simple")
     @Owner("Ekaterina Zhukova")
     @DisplayName("Тест на проверку результата поиска по запросу Вклад")
     @Test
@@ -67,6 +69,7 @@ public class SimpleGazpromBankTests {
         });
     }
 
+    @Tag("simple")
     @Owner("Ekaterina Zhukova")
     @DisplayName("Тест на клибакельность кнопки Стать клиентом")
     @Test
@@ -86,7 +89,7 @@ public class SimpleGazpromBankTests {
         });
     }
 
-
+    @Tag("simple")
     @Owner("Ekaterina Zhukova")
     @DisplayName("Тест на открытие карты с офисами Газпромбанка")
     @Test
@@ -106,6 +109,7 @@ public class SimpleGazpromBankTests {
         });
     }
 
+    @Tag("simple")
     @Owner("Ekaterina Zhukova")
     @DisplayName("Тест на открытие карты с банкоматами Газпромбанка")
     @Test

@@ -54,20 +54,14 @@ tasks.withType(Test).configureEach {
     }
 }
 
-tasks.register('RegFormJenkinsTest', Test) {
+tasks.register('SimpleGazpromBankTests', Test) {
     useJUnitPlatform {
-        includeTags("registrationFormTest")
+        includeTags("simpleGazpromBankTests")
     }
 }
 
 task simple_test(type: Test) {
     useJUnitPlatform{
         includeTags("simple")
-    }
-}
-
-task negative_test(type: Test) {
-    useJUnitPlatform{
-        includeTags("negative")
     }
 }
