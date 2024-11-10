@@ -15,7 +15,7 @@ import static io.qameta.allure.Allure.step;
 @DisplayName("Проверка главной страницы Газпромбанка")
 public class SimpleGazpromBankTests extends TestBase {
 
-    @Tag("simple")
+    @Tag("simpleGazpromBankTests")
     @Owner("Ekaterina Zhukova")
     @DisplayName("Тест на выбора города на главной странице Газпромбанка")
     @Test
@@ -44,7 +44,7 @@ public class SimpleGazpromBankTests extends TestBase {
         });
     }
 
-    @Tag("simple")
+    @Tag("simpleGazpromBankTests")
     @Owner("Ekaterina Zhukova")
     @DisplayName("Тест на проверку результата поиска по запросу Вклад")
     @Test
@@ -69,7 +69,7 @@ public class SimpleGazpromBankTests extends TestBase {
         });
     }
 
-    @Tag("simple")
+    @Tag("simpleGazpromBankTests")
     @Owner("Ekaterina Zhukova")
     @DisplayName("Тест на клибакельность кнопки Стать клиентом")
     @Test
@@ -89,7 +89,7 @@ public class SimpleGazpromBankTests extends TestBase {
         });
     }
 
-    @Tag("simple")
+    @Tag("simpleGazpromBankTests")
     @Owner("Ekaterina Zhukova")
     @DisplayName("Тест на открытие карты с офисами Газпромбанка")
     @Test
@@ -109,7 +109,7 @@ public class SimpleGazpromBankTests extends TestBase {
         });
     }
 
-    @Tag("simple")
+    @Tag("simpleGazpromBankTests")
     @Owner("Ekaterina Zhukova")
     @DisplayName("Тест на открытие карты с банкоматами Газпромбанка")
     @Test

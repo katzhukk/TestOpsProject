@@ -59,9 +59,3 @@ tasks.register('SimpleGazpromBankTests', Test) {
         includeTags("simpleGazpromBankTests")
     }
 }
-
-task simple_test(type: Test) {
-    useJUnitPlatform{
-        includeTags("simple")
-    }
-}
