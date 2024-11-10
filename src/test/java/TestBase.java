@@ -19,7 +19,7 @@ public class TestBase {
         Configuration.baseUrl = "https://www.gazprombank.ru/";
         Configuration.pageLoadStrategy = "eager";
         //Configuration.holdBrowserOpen = true;
-        //Configuration.timeout = 10000;
+        Configuration.timeout = 10000;
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
