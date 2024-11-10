@@ -6,15 +6,15 @@
 ---
 ## Содержание
 
-* [Технологии и инструменты](#технологии-и-инструменты)
+* [Технологии и инструменты](#Технологии-и-инструменты)
 * [Список проверок](#Список-проверок)
 * [Сборка в Jenkins](#Сборка-в-Jenkins)
-* [Allure Report](#--allure-report)
-* [Уведомление в Telegram о результатах тестов](#-уведомление-в-telegram-о-результатах-тестов)
-* [Видео прохождение тестов](#-видео-прохождение-тестов)
+* [Allure Report](#Allure-report)
+* [Уведомление в Telegram о результатах тестов](#Уведомление-в-Telegram-о-результатах-тестов)
+* [Видео прохождение тестов](#Видео-прохождение-тестов)
 
 ---
-## <a name="Технологии и инструменты:">**Технологии и инструменты:**</a>
+## <a name="Технологии-и-инструменты:">**Технологии и инструменты:**</a>
 
 <p align="center">  
 <a href="https://www.jetbrains.com/idea/"><img src="images/Intelij_IDEA.svg" width="50" height="50"  alt="IDEA"/></a>  
@@ -31,7 +31,7 @@
 
 ---
 <a id="tests"></a>
-## <a name="Список проверок">**Список проверок**</a>
+## <a name="Список-проверок">**Список проверок**</a>
 
 * Проверка на выбор города на главной странице Газпромбанка  
 * Проверка результата поиска по запросу Вклад
@@ -42,7 +42,7 @@
 ---
 
 <a id="tools"></a>
-## <a name="Сборка в Jenkins:">**Сборка в Jenkins**</a>
+## <a name="Сборка-в-Jenkins">**Сборка в Jenkins**</a>
 
 Тесты запускаются через [Jenkins](https://jenkins.autotests.cloud/job/001_katzhukk_SimpleGazpromBankTests/)
 
@@ -65,7 +65,7 @@ SimpleGazpromBankTests
 ---
 
 <a id="allure"></a>
-## <a name="Allure Report">**Allure Report**</a>
+## <a name="Allure-report">**Allure Report**</a>
 
 После окончания прогона тестов формируется отчет [Allure](https://jenkins.autotests.cloud/job/001_katzhukk_SimpleGazpromBankTests/15/allure/)
 
@@ -88,7 +88,7 @@ SimpleGazpromBankTests
 
 ---
 
-## <a name="Уведомление в Telegram о результатах тестов">**Уведомление в Telegram о результатах тестов**</a>
+## <a name="Уведомление-в-Telegram-о-результатах-тестов">**Уведомление в Telegram о результатах тестов**</a>
 
 Telegram бот уведомляет о результатах тестах для быстрой визуализации отчетности
 <p align="center">  
@@ -97,7 +97,7 @@ Telegram бот уведомляет о результатах тестах дл
 
 ____
 
-## <a name="Видео прохождения тестов">**Видео прохождения тестов**</a>
+## <a name="Видео-прохождения-тестов">**Видео прохождения тестов**</a>
 
 <p align="center">
 <img title="Selenoid Video" src="images/SimpleGazpromBankTests.gif" width="600" height="400"  alt="video">   
