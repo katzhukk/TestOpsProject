@@ -97,7 +97,7 @@ Telegram бот уведомляет о результатах тестах дл
 
 ____
 
-## <a name="Видео-прохождения-тестов">**Видео прохождения тестов**</a>
+## <a name="Видео-прохождение-тестов">**Видео прохождение тестов**</a>
 
 <p align="center">
 <img title="Selenoid Video" src="images/SimpleGazpromBankTests.gif" width="600" height="400"  alt="video">   
