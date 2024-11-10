@@ -88,7 +88,8 @@ SimpleGazpromBankTests
 
 ---
 
-## Уведомление в Telegram о результатах тестов
+## <a name="Уведомление в Telegram о результатах тестов">**Уведомление в Telegram о результатах тестов**</a>
+
 Telegram бот уведомляет о результатах тестах для быстрой визуализации отчетности
 <p align="center">  
 <img title="Allure Tests" src="images/allert_bot.PNG" width="650">  
@@ -96,7 +97,7 @@ Telegram бот уведомляет о результатах тестах дл
 
 ____
 
-## Видео прохождения тестов
+## <a name="Видео прохождения тестов">**Видео прохождения тестов**</a>
 
 <p align="center">
 <img title="Selenoid Video" src="images/SimpleGazpromBankTests.gif" width="600" height="400"  alt="video">   
