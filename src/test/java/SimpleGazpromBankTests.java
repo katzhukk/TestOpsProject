@@ -15,7 +15,7 @@ import static io.qameta.allure.Allure.step;
 public class SimpleGazpromBankTests {
 
     @Owner("Ekaterina Zhukova")
-    @DisplayName("Тест на выбора города")
+    @DisplayName("Тест на выбора города на главной странице Газпромбанка")
     @Test
     void chooseCityTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
@@ -33,9 +33,9 @@ public class SimpleGazpromBankTests {
         });
 
         step("Выбираем город Екатеринбург", () -> {
-            $(".text_field-860 text_field_search-860").click();
-            $(".text_field-860 text_field_search-860").setValue("екатеринбург");
-            $(".cities_content__list-5d5").$(byText("Екатеринбург")).click();
+            $(".cities_content__search-5d5").click();
+            $("[name='city-search']").setValue("екатеринбург");
+            $("[class='cities_content__scrollbars_root-5d5 scrollbar-992 ']").$(byText("Екатеринбург")).click();
         });
         step("Проверяем, что выбран город Екатеринбург", () -> {
             $(".header_full_location__desktop-dbc").shouldHave(text("Екатеринбург"));
@@ -58,12 +58,12 @@ public class SimpleGazpromBankTests {
         });
 
         step("Вбиваем в поисковую строку запрос на Вклады", () -> {
-            $(".search_bar__field-2b5").click();
-            $(".search_bar__field-2b5").setValue("Вклады").pressEnter();
+            $("[class='text_field-860 text_field_search-860 text_field_no_label-860']").click();
+            $("[class='text_field__input-860 search_bar__input-2b5']").setValue("Вклады").pressEnter();
         });
 
         step("Проверяем результаты поиска по Вкладам", () -> {
-            $("#ya-site-results").shouldHave(text("Открыть вклад"));
+            $("[class='template_section_wrapper-e6c']").shouldHave(text("Открыть вклад"));
         });
     }
 
@@ -73,17 +73,16 @@ public class SimpleGazpromBankTests {
     void searchTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
-        step("Открываем главную страницу Gazprombank", () -> {
+        step("Открываем главную страницу Газпромбанка", () -> {
             open("https://www.gazprombank.ru/");
         });
 
         step("Нажимаем на кнопки Стать клиентом", () -> {
-            $(".header_full_bottom_popups_popups__cell-590").click();
+            $("[data-test-id='header-become-client-button']").click();
         });
 
         step("Проверка, что после нажатия на кнопку вылезает окно Стать клиентом", () -> {
-            $(".header_popup_links__wrapper-bb5").click();
-            $(".search_bar__field-2b5").shouldHave(text("Стать клиентом"));
+            $("[class='ScrollbarsCustom-Content scrollbar_scrollbars__content-992']").shouldHave(text("Стать клиентом"));
         });
     }
 
@@ -94,16 +93,16 @@ public class SimpleGazpromBankTests {
     void openOfficesMapsTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
-        step("Открываем главную страницу Gazprombank", () -> {
+        step("Открываем главную страницу Газпромбанка", () -> {
             open("https://www.gazprombank.ru/");
         });
 
         step("Нажимаем на слово Офисы в верхнем углу сайта", () -> {
-            $(".header_full_main_menu__item-718").click();
+            $(".header_full_main_menu__item-718").$(byText("Офисы")).click();
         });
 
         step("Проверка карты с офисами Газпромбанка", () -> {
-            $(".tabs__btn-b78 tabs_active-b78").shouldHave(text("Офисы"));
+            $("[class='tabs__btn-b78 tabs_active-b78']").shouldHave(text("Офисы"));
         });
     }
 
@@ -113,16 +112,16 @@ public class SimpleGazpromBankTests {
     void openCashMachineMapsTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
-        step("Открываем главную страницу Gazprombank", () -> {
+        step("Открываем главную страницу Газпромбанка", () -> {
             open("https://www.gazprombank.ru/");
         });
 
         step("Нажимаем на слово Офисы в верхнем углу сайта", () -> {
-            $(".header_full_main_menu__item-718").click();
+            $(".header_full_main_menu__item-718").$(byText("Офисы")).click();
         });
 
         step("Проверка карты с офисами Газпромбанка", () -> {
-            $(".tabs__btn-b78 tabs_active-b78").shouldHave(text("Офисы"));
+            $("[class='tabs__btn-b78 tabs_active-b78']").shouldHave(text("Офисы"));
         });
 
         step("Кликаем на кнопку выбора Банкоматов", () -> {
@@ -130,7 +129,7 @@ public class SimpleGazpromBankTests {
         });
 
         step("Проверка карты с банкоматами Газпромбанка", () -> {
-            $(".tabs__btn-b78 tabs_active-b78").shouldHave(text("Банкоматы"));
+            $("[class='tabs__btn-b78 tabs_active-b78']").shouldHave(text("Банкоматы"));
         });
     }
 }
