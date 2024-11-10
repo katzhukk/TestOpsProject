@@ -68,13 +68,17 @@ SimpleGazpromBankTests
 ## <a name="Allure Report">**Allure Report**</a>
 
 После окончания прогона тестов формируется отчет [Allure](https://jenkins.autotests.cloud/job/001_katzhukk_SimpleGazpromBankTests/15/allure/)
+
+
 ## Основная страница отчёта
 
 <p align="center">  
 <img title="Allure Overview Dashboard" src="images/allure_report.PNG" width="850">  
 </p> 
 
-## Тест-кейсы.
+---
+## Тест-кейсы
+
 Содержат подробное описание шагов со скриншотами, видео и Page Source по каждому тесту  
 
 При нажатии на определенный тест, раскрываются шаги теста с приложенными вложениями
@@ -87,7 +91,7 @@ SimpleGazpromBankTests
 ## Уведомление в Telegram о результатах тестов
 Telegram бот уведомляет о результатах тестах для быстрой визуализации отчетности
 <p align="center">  
-<img title="Allure Tests" src="images/allert_bot.PNG" width="850">  
+<img title="Allure Tests" src="images/allert_bot.PNG" width="650">  
 </p> 
 
 ____
