@@ -12,18 +12,16 @@ import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
+@Tag("simpleGazpromBankTests")
+@Owner("Ekaterina Zhukova")
 @DisplayName("Проверка главной страницы Газпромбанка")
 public class SimpleGazpromBankTests extends TestBase {
 
-    @Tag("simpleGazpromBankTests")
-    @Owner("Ekaterina Zhukova")
     @DisplayName("Тест на выбора города на главной странице Газпромбанка")
     @Test
     void chooseCityTest() {
-        SelenideLogger.addListener("allure", new AllureSelenide());
-
         step("Открываем главную страницу Газпромбанка", () -> {
-            open("https://www.gazprombank.ru/");
+            open("/");
         });
 
         step("Проверяем, что выбран город Москва", () -> {
@@ -44,15 +42,11 @@ public class SimpleGazpromBankTests extends TestBase {
         });
     }
 
-    @Tag("simpleGazpromBankTests")
-    @Owner("Ekaterina Zhukova")
     @DisplayName("Тест на проверку результата поиска по запросу Вклад")
     @Test
     void searchResultTest() {
-        SelenideLogger.addListener("allure", new AllureSelenide());
-
         step("Открываем главную страницу Газпромбанка", () -> {
-            open("https://www.gazprombank.ru/");
+            open("/");
         });
 
         step("Нажимаем на поиск в правом верхнем углу", () -> {
@@ -69,15 +63,11 @@ public class SimpleGazpromBankTests extends TestBase {
         });
     }
 
-    @Tag("simpleGazpromBankTests")
-    @Owner("Ekaterina Zhukova")
     @DisplayName("Тест на клибакельность кнопки Стать клиентом")
     @Test
     void searchTest() {
-        SelenideLogger.addListener("allure", new AllureSelenide());
-
         step("Открываем главную страницу Газпромбанка", () -> {
-            open("https://www.gazprombank.ru/");
+            open("/");
         });
 
         step("Нажимаем на кнопки Стать клиентом", () -> {
@@ -89,15 +79,11 @@ public class SimpleGazpromBankTests extends TestBase {
         });
     }
 
-    @Tag("simpleGazpromBankTests")
-    @Owner("Ekaterina Zhukova")
     @DisplayName("Тест на открытие карты с офисами Газпромбанка")
     @Test
     void openOfficesMapsTest() {
-        SelenideLogger.addListener("allure", new AllureSelenide());
-
         step("Открываем главную страницу Газпромбанка", () -> {
-            open("https://www.gazprombank.ru/");
+            open("/");
         });
 
         step("Нажимаем на слово Офисы в верхнем углу сайта", () -> {
@@ -109,15 +95,11 @@ public class SimpleGazpromBankTests extends TestBase {
         });
     }
 
-    @Tag("simpleGazpromBankTests")
-    @Owner("Ekaterina Zhukova")
     @DisplayName("Тест на открытие карты с банкоматами Газпромбанка")
     @Test
     void openCashMachineMapsTest() {
-        SelenideLogger.addListener("allure", new AllureSelenide());
-
         step("Открываем главную страницу Газпромбанка", () -> {
-            open("https://www.gazprombank.ru/");
+            open("/");
         });
 
         step("Нажимаем на слово Офисы в верхнем углу сайта", () -> {
