@@ -45,6 +45,6 @@ public class TestBase {
         Attach.screenshotAs("Last screenshot");
         Attach.browserConsoleLogs();
         Attach.addVideo();
+        Selenide.closeWebDriver();
     }
-
 }
