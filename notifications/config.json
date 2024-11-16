@@ -1,0 +1,17 @@
+{
+  "base": {
+    "project": "RegFormJenkins",
+    "environment": "qa.guru",
+    "comment": "comment here @katzhukk",
+    "reportLink": "https://jenkins.autotests.cloud/job/001_katzhukk_SimpleGazpromBankTests/4/",
+    "language": "ru",
+    "messenger": "telegram",
+    "allureFolder": "C:\\Users\\E784~1\\AppData\\Local\\Temp\\17740726316452829300\\allure-report",
+    "enableChart": true
+  },
+  "telegram": {
+    "token": "8104626565:AAF8lWY5Oq_7-yzpcYIfJLFrSM6MHw8hBRk",
+    "chat": "-1002222643756",
+    "replyTo": ""
+  }
+}

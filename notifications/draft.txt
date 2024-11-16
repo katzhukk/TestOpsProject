@@ -1,0 +1,15 @@
+8104626565:AAF8lWY5Oq_7-yzpcYIfJLFrSM6MHw8hBRk
+
+https://api.telegram.org/bot8104626565:AAF8lWY5Oq_7-yzpcYIfJLFrSM6MHw8hBRk/getUpdates
+https://api.telegram.org/bot8104626565:AAF8lWY5Oq_7-yzpcYIfJLFrSM6MHw8hBRk/getUpdates
+-4513593912
+
+curl -X POST -H 'Content-Type: application/json' -d '{"chat_id": "-4513593912", "text": "This is a test from qa allert bot", "disable_notification": true}' https://api.telegram.org/bot8104626565:AAF8lWY5Oq_7-yzpcYIfJLFrSM6MHw8hBRk/sendMessage
+
+java "-DconfigFile=notifications/config.json" -jar notifications/allure-notifications-4.8.0.jar
+
+-1002454944737
+
+new: -1002222643756
+
+curl -X POST -H 'Content-Type: application/json' -d '{"chat_id": "-1002222643756", "text": "This is a test from curl", "disable_notification": true}' https://api.telegram.org/bot8104626565:AAF8lWY5Oq_7-yzpcYIfJLFrSM6MHw8hBRk/sendMessage
